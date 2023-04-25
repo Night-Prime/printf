@@ -25,7 +25,7 @@ unsigned int print_width(buffer_t *output, unsigned int printed,
 
 	if (NEG_FLAG == 0)
 	{
-		for (wid -= printed; wid > 0;)
+		for (wid -= printed; wid > 0;wid--)
 			ret += _memcpy(output, &width, 1);
 	}
 
